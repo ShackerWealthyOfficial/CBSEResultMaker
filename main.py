@@ -31,7 +31,7 @@ def remove_header(file):
             pass
         elif i[0].isdigit() or i[0].isspace():
             st += i
-    file2 = open('file2.txt', 'w')
+    file2 = open('temp.txt', 'w')
     file2.write(st)
     file2.close()
 
@@ -155,20 +155,12 @@ def xlsx_create():
 
 file = open('sample.txt', 'r')
 remove_header(file)
-file2 = open('file2.txt', 'r')
+file2 = open('temp.txt', 'r')
 divide(file2)
 
 arrange()
 total_subjects()
 xlsx_create()
-
-file = open('sample.txt', 'r')
-remove_header(file)
-file2 = open('file2.txt', 'r')
-divide(file2)
-
-file.close()
-file2.close()
 
 file.close()
 file2.close()
