@@ -67,16 +67,6 @@ def divide(file):
             for k in range(0, len(temp), 2):
                 marks[-1].append([temp[k], temp[k+1]])
 
-    '''
-    print(roll)
-    print(gen)
-    print(name)
-    print(subs)
-    print(grades)
-    print(state)
-    print(marks)
-    '''
-
 def total_subjects():
     global total_subs
     l = []
@@ -163,7 +153,7 @@ def xlsx_create():
 
     wbook.save('C:\\Users\\kv\\Desktop\\AD\\Project\\test.xlsx')
 
-file = open('A.TXT', 'r')
+file = open('sample.txt', 'r')
 remove_header(file)
 file2 = open('file2.txt', 'r')
 divide(file2)
@@ -172,7 +162,7 @@ arrange()
 total_subjects()
 xlsx_create()
 
-file = open('A.TXT', 'r')
+file = open('sample.txt', 'r')
 remove_header(file)
 file2 = open('file2.txt', 'r')
 divide(file2)
